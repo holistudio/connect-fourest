@@ -133,6 +133,7 @@ if __name__ == '__main__':
                       local_steps_per_epoch=100_000)
     agent1.load(module_filename='Conn4-P1_agent.pt.tar', buffer_filename="Conn4-P1_buffer.npz")
     
+    # TODO: initialize your agent2 however you want here (optional)
     agent2 = PPOAgent(env.observation_spaces['player_1']['observation'], 
                       env.action_spaces['player_1'], 
                       local_steps_per_epoch=100_000)
